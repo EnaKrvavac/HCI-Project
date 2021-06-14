@@ -26,6 +26,10 @@ $(document).ready(function() {
 
   });
 
-  app.run();
 
-});
+
+
+    // run app
+    app.run();
+
+  });

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:"Lucida Console",monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family:"Lucida Console",monospace ;
+
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Console",monospace;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+  font-family:"Lucida Console",monospace ;
+
+}
+
+.header a.active {
+  background-color: #ddd;
+  color: black;
+  font-family:"Lucida Console",monospace ;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+  .header-right {
+    float: none;
+  }
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 120%;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 120%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+.vertical-menu {
+  width: 3000px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #F1C40F ;
+  color: white;
+}
+
+/* Style inputs */
+
+</style>
+</head>
+<body>
+
+  <div class="header">
+     <a href="#default" class="logo">SarajevoTram</a>
+     <div class="header-right">
+       <a class="active" href="index.html">Home</a>
+       <a class="#schedule" href="schedule.html">Schedule</a>
+       <a href="contact.html">Contact</a>
+       <a href="about.html">About</a>
+     </div>
+   </div>
+
+   <div class="container">
+     <form action="/action_page.php">
+
+       <label for="country">Destination</label>
+       <select id="country" name="country">
+         <option value="australia">[1] Bascarsija - Zeljeznicka stanica</option>
+         <option value="canada">[2] Bascarsija - Cengic Vila</option>
+         <option value="usa">[3] Bascarsija - Ilidza</option>
+         <option value="usa1">[4] Zeljeznica stanica - Ilidza</option>
+         <option value="usa2">[5] Bascarsija - Nedzarici</option>
+         <option value="usa3">[6] Skenderija - Ilidza</option>
+
+
+       </select>
+
+
+
+     </form>
+   </div>
+
+
+   <div class="vertical-menu">
+     <a href="#" class="active">Vijecnica</a>
+     <a href="#">Departs        -16 minutes</a>
+     <a href="#">Departs in     -1 hour,16 min</a>
+     <a href="#">Departs in     -2hours,16 min</a>
+     <div class="vertical-menu">
+       <a href="#" class="active">Katedrala</a>
+       <div class="vertical-menu">
+       <a href="#" class="active">Banka</a>
+       <div class="vertical-menu">
+       <a href="#" class="active">Park</a>
+       <div class="vertical-menu">
+         <a href="#" class="active">Marijin Dvor</a>
+         <div class="vertical-menu">
+           <a href="#" class="active">Univerzitet</a>
+           <div class="vertical-menu">
+             <a href="#" class="active">Pofalici</a>
+             <div class="vertical-menu">
+               <a href="#" class="active">Socijalno</a>
+               <a href="#">Departs        -16 minutes</a>
+               <a href="#">Departs in     -1 hour,16 min</a>
+               <a href="#">Departs in     -2hours,16 min</a>
+               <div class="vertical-menu">
+                 <a href="#" class="active">Dolac Malta</a>
+                 <div class="vertical-menu">
+                   <a href="#" class="active">Cengic Vila</a>
+                   <div class="vertical-menu">
+                     <a href="#" class="active">Otoka</a>
+                     <div class="vertical-menu">
+                       <a href="#" class="active">Alipasin Most</a>
+                       <div class="vertical-menu">
+                         <a href="#" class="active">Nedzarici</a>
+                         <div class="vertical-menu">
+                           <a href="#" class="active">Stup</a>
+
+   </div>
+
+</body>
+</html>
